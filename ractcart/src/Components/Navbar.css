@@ -1,22 +1,47 @@
-.navmain{
+.navmain {
     display: flex;
     top: 0;
     left: 0;
+    width: 100%;
     position: absolute;
-    
+    box-shadow: 0px 6px 16px rgba(0,0,0, 0.2);
 }
-.leftnav{
-    flex: 5;
+
+.leftnav {
+    flex: 1;
 }
-.textp{
+
+.textp {
     color: black;
     font-size: 20px;
     font-weight: 600;
+    margin-left: 3%;
 }
-.rightnav{
-    flex: 6;
+
+.rightnav {
+    flex: 1;
+    display: flex;
+    justify-content: right;
 }
-.imgnav{
-    width: 10vh;
-    height: 10vh;
+
+.imgnav {
+    width: 3vh;
+    height: 3vh;
+    margin-top: 2%;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.ulnav{
+    display: flex;
+    list-style:none;
+    margin-right: 3%;
+}
+
+.linav {
+    margin-right: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 3%;
+    cursor: pointer;
 }

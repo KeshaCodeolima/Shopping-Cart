@@ -4,11 +4,11 @@ import { Products } from '../Product';
 
 function HomePage() {
     return (
-        <div>
+        <div  className='productmain'>
             <div>
                 <h1>Home Page</h1>
             </div>
-            <div className="productmain">
+            <div className="productmainbox">
             </div>
         </div>
     )

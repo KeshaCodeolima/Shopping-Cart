@@ -1,9 +1,10 @@
 import React from 'react'
 
-function ProductsCart() {
+const ProductsCart= (props)=> {
+  const {id,name,image,description}= props.data;
   return (
-    <div>
-      ProductsCart
+    <div className='itembox'>
+      <img src={image} alt='image1'  className='boximg' />
     </div>
   )
 }

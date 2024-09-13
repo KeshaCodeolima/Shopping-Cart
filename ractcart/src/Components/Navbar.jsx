@@ -1,4 +1,5 @@
 import React from 'react';
+import './Navbar.css';
 import shoppingimage from '../assets/Images/ShoppingCart.png'
 
 function Navbar() {
@@ -13,7 +14,7 @@ function Navbar() {
                     <li>Login</li>
                     <li>Sign In</li>
                 </ul>
-                <img src={shoppingimage} alt="cart" />
+                <img src={shoppingimage} alt="cart" className='imgnav' />
             </div>
         </nav>
         </>

@@ -20,7 +20,7 @@ import Image19 from '../assets/Images/IMG1.jpg';
 import Image20 from '../assets/Images/IMG1.jpg';
 
 
-export default Product = [
+export const Products = [
     {
         id:1,
         name:'Chair name1',
@@ -161,4 +161,4 @@ export default Product = [
         image:Image20,
         description:'Chairs are a type of furniture designed for sitting, typically featuring a seat, backrest, and legs. They come in various styles, materials, and designs, ranging from simple wooden chairs to ergonomic office chairs with adjustable features. Chairs are used in homes, offices, and public spaces, providing comfort and support for daily activities.',
     },
-]
+];

@@ -9,8 +9,23 @@
     border: 2px solid rgb(173, 171, 170);
 }
 .boximg{
-    width:40vh; 
-    height: 42vh;
+    width:44vh; 
+    height: 40vh;
     border-radius: 12px;
-    margin-left: 4.5%;
+}
+.btncart{
+    background-color: rgb(165, 208, 252);
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    width: 60%;
+    height: 36px;
+    cursor: pointer;
+    margin-top: 2%;
+}
+.btnp{
+    display: flex;
+    justify-content: space-between;
 }

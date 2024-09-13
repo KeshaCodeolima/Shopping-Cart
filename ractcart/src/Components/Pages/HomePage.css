@@ -19,4 +19,8 @@ h1{
     width: 100%;
     position:static;
 }
+.productmainbox{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
 

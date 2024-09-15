@@ -45,3 +45,7 @@
     margin-top: 3%;
     cursor: pointer;
 }
+.ulnav a{
+    text-decoration: none;
+    color: black;
+}

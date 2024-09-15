@@ -1,6 +1,7 @@
 import React from 'react';
 import './Navbar.css';
-import shoppingimage from '../assets/Images/ShoppingCart.png'
+import shoppingimage from '../assets/Images/ShoppingCart.png';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
     return (
@@ -11,9 +12,10 @@ function Navbar() {
                 </div>
                 <div className="rightnav">
                     <ul className='ulnav'>
-                        <li className='linav'>Sign in</li>
-                        <li className='linav'>Login</li>
-                        <img src={shoppingimage} alt="cart"  className='imgnav'/>
+                        <Link to="/additem" ><li className='linav'>Add Items</li></Link>
+                        <Link to="/signin" ><li className='linav'>Sign in</li></Link>
+                        <Link to="/login"><li className='linav'>Login</li></Link>
+                        <Link to="/cart"><img src={shoppingimage} alt="cart"  className='imgnav'/></Link>
                     </ul>
                 </div>
             </nav>

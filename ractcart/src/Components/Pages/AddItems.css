@@ -1,0 +1,15 @@
+.mainadditem{
+    display: flex;
+}
+
+.mainaddbox{
+    margin: auto 10%;
+}
+
+.mainaddbox input{
+    padding: 10px;
+}
+
+.btnadd{
+    background-color: lightblue;
+}

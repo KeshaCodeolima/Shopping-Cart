@@ -1,0 +1,26 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.productmain{
+    display: grid;
+    background-color: rgb(246, 244, 244);
+    margin-top: 4.1%;
+    left: 0;
+    width: 100%;
+    position:static;
+}
+.productmainbox{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+

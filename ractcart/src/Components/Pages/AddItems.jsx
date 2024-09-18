@@ -16,11 +16,7 @@ function AddItems() {
         formData.append('image', itemImage)
         axios.post("http://localhost:3001/upload", formData)
         .then(res=>{console.log(res)
-            if (res.data==='Successful') {
-                alert('Item Add Successful.')
-            } else {
-                alert('Item Add Unsuccessful.')
-            }
+            alert('Item Add Successful')
         })
         .catch(err=>console.log(err))
     };

@@ -5,7 +5,7 @@ function SigninPage(){
     return(
         <>
         <div className="registermain">
-                <div className="registerbox">
+                <div className="signinbox">
                     <div className="registertittel">
                         <h2>Sign In</h2>
                     </div>
@@ -14,7 +14,7 @@ function SigninPage(){
                         <input type="password" placeholder='Enter Your Password' />
                     </div>
                     <div className="btnregi">
-                        <button>Sign In</button>
+                        <button>Sign in</button>
                     </div>
                 </div>
             </div>

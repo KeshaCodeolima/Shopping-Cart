@@ -51,6 +51,10 @@ h1{
     cursor: pointer;
     margin-top: 2%;
 }
+.btncart:hover{
+    cursor: pointer;
+    background-color: rgb(47, 132, 172);
+}
 .btnp{
     display: flex;
     justify-content: space-between;

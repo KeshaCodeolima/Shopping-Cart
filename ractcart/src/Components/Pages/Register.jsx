@@ -1,7 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Register.css';
 
 function Register() {
+
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [address, setAddress] = useState('')
+    const [phonenumber, setPhonenummber] = useState('')
+    const [password, setPassword] = useState('')
+
     return (
         <>
             <div className="registermain">
@@ -10,12 +17,11 @@ function Register() {
                         <h2>Register</h2>
                     </div>
                     <div className="registerdetails">
-                        <input type="text" placeholder='Enter Your Name' />
-                        <input type="email" placeholder='Enter Your Email' />
-                        <input type="text" placeholder='Enter Your Phone Number' />
-                        <input type="text" placeholder='Enter Your Address' />
-                        <input type="password" placeholder='Enter Your Password' />
-                        <input type="password" placeholder='Conform Password' />
+                        <input type="text" placeholder='Enter Your Name' onChange={(e)=>setName(e.target.value)}/>
+                        <input type="email" placeholder='Enter Your Email' onChange={(e)=>setEmail(e.target.value)}/>
+                        <input type="text" placeholder='Enter Your Address' onChange={(e)=>setAddress(e.target.value)}/>
+                        <input type="text" placeholder='Enter Your Phone Number' onChange={(e)=>setPhonenummber(e.target.value)}/>
+                        <input type="password" placeholder='Enter Your Password' onChange={(e)=>setPassword(e.target.value)}/>
                     </div>
                     <div className="btnregi">
                         <button>Register</button>

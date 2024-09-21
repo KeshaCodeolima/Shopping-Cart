@@ -11,7 +11,7 @@ function AddItems() {
 
     const handleAddItems=(e)=>{
         const formData = new FormData();
-        formData.append('id',itemId);
+        formData.append('itemid',itemId);
         formData.append('name',itemName);
         formData.append('price', itemPrice);
         formData.append('description', itemDescription);

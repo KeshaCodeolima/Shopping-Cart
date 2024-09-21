@@ -1,0 +1,62 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.productmain{
+    display: grid;
+    background-color: rgb(246, 244, 244);
+    margin-top: 4.1%;
+    left: 0;
+    width: 100%;
+    position:static;
+}
+.productmainbox{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.itembox {
+    width:auto; 
+    height: auto;
+    margin-left: 3%;
+    margin-bottom: 4%;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 16px;
+    border: 2px solid rgb(173, 171, 170);
+}
+.boximg{
+    width:44vh; 
+    height: 40vh;
+    border-radius: 12px;
+    box-shadow: 0px 6px 10px rgba(0,0,0,0.3);
+}
+.btncart{
+    background-color: rgb(165, 208, 252);
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    width: 60%;
+    height: 36px;
+    cursor: pointer;
+    margin-top: 2%;
+}
+.btncart:hover{
+    cursor: pointer;
+    background-color: rgb(47, 132, 172);
+}
+.btnp{
+    display: flex;
+    justify-content: space-between;
+}
+

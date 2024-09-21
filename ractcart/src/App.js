@@ -5,12 +5,13 @@ import HomePage from "./Components/Pages/HomePage";
 import Register from "./Components/Pages/Register";
 import SigninPage from "./Components/Pages/SigninPage";
 import { Provider } from "react-redux";
+import Store from "./Components/Store/Store";
 
 
 function App() {
   return (
     <div>
-      <Provider>
+      <Provider store={Store}>
         <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />

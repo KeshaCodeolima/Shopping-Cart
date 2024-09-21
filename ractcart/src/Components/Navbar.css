@@ -49,3 +49,13 @@
     text-decoration: none;
     color: black;
 }
+.cartitems{
+    background-color: rgb(85, 84, 84);
+    border-radius: 50%;
+    padding: 2px;
+    color: white;
+    position: absolute;
+    width: 12px;
+    height: 2.5vh;
+    text-align:center;
+}

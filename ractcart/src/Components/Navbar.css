@@ -52,10 +52,10 @@
 .cartitems{
     background-color: rgb(85, 84, 84);
     border-radius: 50%;
-    padding: 2px;
+    padding: 3px 6px;
     color: white;
-    position: absolute;
     width: 12px;
     height: 2.5vh;
     text-align:center;
+
 }

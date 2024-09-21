@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './HomePage.css';
 import axios from 'axios';
 import { useDispatch } from 'react-redux';
+import { addcart } from '../Store/CartSlice';
 
 function HomePage() {
 

@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import './HomePage.css';
 import axios from 'axios';
+import { useDispatch } from 'react-redux';
 
 function HomePage() {
+
+    const dispatch = useDispatch()
 
     const [Items, setItems]= useState([])
 

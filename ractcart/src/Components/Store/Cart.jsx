@@ -1,9 +1,11 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import './Cart.css';
+import { removecart } from './CartSlice';
 
 function Cart() {
     const cartitems = useSelector(state => state.cart.cart)
+    const dispatch = useDispatch()
     return (
         <>
             <h1 className='carth1'>Cart page</h1>
@@ -26,7 +28,7 @@ function Cart() {
                                                 <span className='addspan'>1</span>
                                                 <span className='addspan'>+</span>
                                             </div>
-                                            <button className='cartbtn'>Remove</button>
+                                            <button className='cartbtn' onClick={()=>dispatch(removecart({id:item.id}))}>Remove</button>
                                         </div>
                                     </div>
                                 </div>

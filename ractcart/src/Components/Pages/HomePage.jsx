@@ -32,7 +32,7 @@ function HomePage() {
                 <h3>{item.name}</h3>
                 <div className='btnp'>
                     <p>{item.price}</p>
-                    <button className='btncart' onClick={()=> dispatch(addcart({item:item.image,item:item.name,item:item.price}))}>Add To Cart</button>
+                    <button className='btncart' onClick={()=> dispatch(addcart({image:item.image,name:item.name,price:item.price}))}>Add To Cart</button>
                 </div>
             </div>
                ))}

@@ -3,6 +3,7 @@ import './AddItems.css';
 import axios from 'axios';
 
 function AddItems() {
+    const [itemId, setItemID] = useState('');
     const [itemName, setItemName] = useState('');
     const [itemPrice, setItemPrice] = useState('');
     const [itemDescription, setItemDescription] = useState('');
@@ -10,6 +11,7 @@ function AddItems() {
 
     const handleAddItems=(e)=>{
         const formData = new FormData();
+        formData.append('itemid',itemId);
         formData.append('name',itemName);
         formData.append('price', itemPrice);
         formData.append('description', itemDescription);
@@ -28,6 +30,12 @@ function AddItems() {
                     <div className="boxtopic">
                         <h2>Add Items.</h2>
                     </div>
+
+                    <input type="text" 
+                    placeholder='Enter Item ID' 
+                    className='inputadd'
+                    value={itemId}
+                    onChange={(e)=>setItemID(e.target.value)}/>
 
                     <input type="text" 
                     placeholder='Enter Item Name' 

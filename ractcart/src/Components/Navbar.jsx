@@ -2,8 +2,11 @@ import React from 'react';
 import './Navbar.css';
 import shoppingimage from '../assets/Images/ShoppingCart.png';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 function Navbar() {
+
+    const cartitems = useSelector(state=>state.cart.cart)
     return (
         <>
             <nav className='navmain'>
@@ -17,7 +20,7 @@ function Navbar() {
                         <Link to="/register"><li className='linav'>Register</li></Link>
                         <Link to="/cart">
                         <img src={shoppingimage} alt="cart"  className='imgnav'/>
-                        <span className='cartitems'>0</span>
+                        <span className='cartitems'>{cartitems.length}</span>
 
                         </Link>
                     </ul>

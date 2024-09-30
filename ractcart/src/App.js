@@ -7,6 +7,7 @@ import SigninPage from "./Components/Pages/SigninPage";
 import { Provider } from "react-redux";
 import Store from "./Components/Store/Store";
 import Cart from "./Components/Store/Cart";
+import Footer from "./Components/Footer";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/signin" element={<SigninPage />} />
           <Route path="/cart" element={<Cart/>}/>
         </Routes>
+        <Footer/>
       </Provider>
     </div>
 

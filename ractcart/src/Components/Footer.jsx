@@ -1,5 +1,8 @@
 import React from 'react';
 import './Footer.css';
+import {visacard} from '../assets/Images/visacard.jpg';
+import {mastercard} from '../assets/Images/mastercard.png';
+import {paypal} from '../assets/Images/paypal.png';
 
 function Footer() {
   return (
@@ -30,7 +33,14 @@ function Footer() {
                 </div>
             </div>
 
-            <div className="footerright"></div>
+            <div className="footerright">
+                <div className="paywith">
+                    <img src={visacard} alt="visa"  className='imagepay'/>
+                    <img src={mastercard} alt="master"  className='imagepay'/>
+                    <img src={paypal} alt="paypal"  className='imagepay'/>
+                </div>
+            </div>
+
         </div>
       </footer>
     </>

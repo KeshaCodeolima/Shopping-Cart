@@ -19,7 +19,17 @@ function Footer() {
                 </div>
             </div>
 
-            <div className="footercenter"></div>
+            <div className="footercenter">
+                <div className="contact">
+                    <p className='help'>Help</p>
+                    <ul className='contactul'>
+                        <li>Help Center</li>
+                        <li>Contact Us</li>
+                        <li>Accessibility</li>
+                    </ul>
+                </div>
+            </div>
+
             <div className="footerright"></div>
         </div>
       </footer>

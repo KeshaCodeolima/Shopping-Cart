@@ -1,8 +1,8 @@
 import React from 'react';
 import './Footer.css';
-import {visacard} from '../assets/Images/visacard.jpg';
-import {mastercard} from '../assets/Images/mastercard.png';
-import {paypal} from '../assets/Images/paypal.png';
+import visacard from '../assets/Images/visacard.jpg';
+import mastercard from '../assets/Images/mastercard.png';
+import paypal from '../assets/Images/paypal.png';
 
 function Footer() {
   return (
@@ -12,7 +12,7 @@ function Footer() {
 
             <div className="footerleft">
                 <div className="aboutleft">
-                    <p className='textp'>About Us</p>
+                    <p className='p'>About Us</p>
                     <ul className='textul'>
                         <li>Our Mission</li>
                         <li>Press</li>

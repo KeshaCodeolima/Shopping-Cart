@@ -5,6 +5,7 @@
     width: 100%;
     position: absolute;
     box-shadow: 0px 6px 16px rgba(0,0,0, 0.2);
+    background-color: rgb(21, 21, 21);
 }
 
 .leftnav {
@@ -12,7 +13,7 @@
 }
 
 .textp {
-    color: black;
+    color: rgb(122, 120, 120);
     font-size: 20px;
     font-weight: 600;
     margin-left: 3%;
@@ -30,6 +31,9 @@
     margin-top: 2%;
     margin-left: 15px;
     cursor: pointer;
+    background-color: white;
+    border-radius: 30%;
+    padding: 4px;
 }
 
 .ulnav{
@@ -47,7 +51,7 @@
 }
 .ulnav a{
     text-decoration: none;
-    color: black;
+    color: rgb(122, 120, 120);
 }
 .cartitems{
     background-color: rgb(85, 84, 84);

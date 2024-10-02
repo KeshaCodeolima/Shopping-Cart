@@ -1,0 +1,63 @@
+.footermain{
+    display: flex;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(35, 34, 34);
+    color: rgb(153, 151, 151);
+}
+
+/* leftside CSS styles. */
+.footerleft{
+    flex: 4;
+}
+.aboutleft{
+    margin-left: 4%;
+    margin-top: 14%;
+}
+.p{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 12%;
+}
+.textul li{
+    font-size: 18px;
+    text-decoration: none;
+    list-style: none;
+    padding-top: 3%;
+    margin-left: 2.5%;
+}
+
+/* Centerside CSS Styles. */
+.footercenter{
+    flex: 4;
+}
+.contact{
+    margin-left: 3%;
+    margin-top: 14%;
+}
+.help{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 12%;
+}
+.contactul li{
+    font-size: 18px;
+    list-style: none;
+    padding-top: 4%;
+}
+
+/* rightside CSS styles. */
+.footerright{
+    flex: 4;
+}
+.paywith{
+    margin-left: 1%;
+}
+.imagepay{
+    width: 10vh;
+    height: 6vh;
+    padding-left: 32px;
+    margin-top: 24%;
+}

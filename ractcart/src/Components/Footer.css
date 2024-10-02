@@ -13,19 +13,20 @@
     flex: 4;
 }
 .aboutleft{
-    margin-left: 3%;
+    margin-left: 4%;
     margin-top: 14%;
 }
 .p{
     font-size: 20px;
     font-weight: 600;
-    margin-left: 8%;
+    margin-left: 12%;
 }
 .textul li{
     font-size: 18px;
     text-decoration: none;
     list-style: none;
     padding-top: 3%;
+    margin-left: 2.5%;
 }
 
 /* Centerside CSS Styles. */
@@ -39,12 +40,12 @@
 .help{
     font-size: 20px;
     font-weight: 600;
-    margin-left: 8%;
+    margin-left: 12%;
 }
 .contactul li{
     font-size: 18px;
     list-style: none;
-    padding-top: 3%;
+    padding-top: 4%;
 }
 
 /* rightside CSS styles. */

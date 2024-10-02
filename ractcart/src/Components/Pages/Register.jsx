@@ -14,7 +14,7 @@ function Register() {
 
     const submit = (e) => {
         e.preventDefault();
-        axios.post("http://localhost:3001/register", { name, email, address, phonenumber, password })
+        axios.post(process.env.REACT_APP_API_URL +"register", { name, email, address, phonenumber, password })
             .then(result => {
                 console.log(result)
                 alert("Register Succsseful")

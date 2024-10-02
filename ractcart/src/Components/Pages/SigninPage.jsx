@@ -10,7 +10,7 @@ function SigninPage() {
 
     const Signin = (e) => {
         e.preventDefault();
-        axios.post("http://localhost:3001/signin", { email, password })
+        axios.post(process.env.REACT_APP_API_URL+"signin", { email, password })
             .then(result => {
                 console.log(result)
                 if (result.data === "succsseful signin") {

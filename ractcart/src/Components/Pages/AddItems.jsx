@@ -16,7 +16,7 @@ function AddItems() {
         formData.append('price', itemPrice);
         formData.append('description', itemDescription);
         formData.append('image', itemImage)
-        axios.post("http://localhost:3001/upload", formData)
+        axios.post(process.env.REACT_APP_API_URL +"upload", formData)
         .then(res=>{console.log(res)
             alert('Item Add Successful')
         })

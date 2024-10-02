@@ -11,7 +11,7 @@ function HomePage() {
     const [Items, setItems]= useState([])
 
     useEffect(()=>{
-        axios.get("http://localhost:3001/getitems")
+        axios.get( process.env.REACT_APP_API_URL+ "getitems")
         .then(result => setItems(result.data))
         .catch(err => console.log(err));
     },[])
@@ -25,7 +25,7 @@ function HomePage() {
                {Items && Items.map((item,index)=>(
                 <div className='itembox' key={index}>
                 <img 
-                    src={`http://localhost:3001/` + item.image} 
+                    src={ process.env.REACT_APP_API_URL + item.image} 
                     alt={item.name} 
                     className='boximg' 
                 />

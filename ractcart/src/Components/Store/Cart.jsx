@@ -1,11 +1,20 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import './Cart.css';
-import { removecart } from './CartSlice';
+import { removecart,incermentquantity,decrementquantity } from './CartSlice';
 
 function Cart() {
     const cartitems = useSelector(state => state.cart.cart)
     const dispatch = useDispatch()
+
+    const handleincrementquantity = (id)=>{
+        dispatch(incermentquantity({id}));
+    };
+
+    const handledecrementquantity = (id)=>{
+        dispatch(decrementquantity({id}));
+    };
+
     return (
         <>
             <h1 className='carth1'>Cart page</h1>
@@ -24,9 +33,9 @@ function Cart() {
                                         <div className=' cartbtnp'>
                                             <p>{item.price}</p>
                                             <div className="addmore">
-                                                <span className='addspan'>-</span>
-                                                <span className='addspan'>1</span>
-                                                <span className='addspan'>+</span>
+                                                <span className='addspan'onClick={()=>handledecrementquantity(item.id)}>-</span>
+                                                <span className='addspan'>{item.quantity}</span>
+                                                <span className='addspan'onClick={()=>handleincrementquantity(item.id)}>+</span>
                                             </div>
                                             <button className='cartbtn' onClick={()=>dispatch(removecart({id:item.id}))}>Remove</button>
                                         </div>

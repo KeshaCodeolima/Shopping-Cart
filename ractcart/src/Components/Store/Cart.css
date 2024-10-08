@@ -1,6 +1,7 @@
 .cartmain{
     display: flex;
     margin-top: 2%;
+    margin-bottom: 4%;
 }
 .carth1{
     display: flex;

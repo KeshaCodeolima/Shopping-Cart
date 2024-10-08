@@ -25,7 +25,7 @@ function Cart() {
                                             <p>{item.price}</p>
                                             <div className="addmore">
                                                 <span className='addspan'>-</span>
-                                                <span className='addspan'>1</span>
+                                                <span className='addspan'>{item.quantity}</span>
                                                 <span className='addspan'>+</span>
                                             </div>
                                             <button className='cartbtn' onClick={()=>dispatch(removecart({id:item.id}))}>Remove</button>

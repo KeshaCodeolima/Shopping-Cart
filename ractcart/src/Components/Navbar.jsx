@@ -7,6 +7,8 @@ import { useSelector } from 'react-redux';
 function Navbar() {
 
     const cartitems = useSelector(state=>state.cart.cart)
+
+    const totalQuantity = cartitems.reduce((acc, item)=> acc + item.quantity,0)
     return (
         <>
             <nav className='navmain'>
@@ -20,7 +22,7 @@ function Navbar() {
                         <Link to="/register"><li className='linav'>Register</li></Link>
                         <Link to="/cart">
                         <img src={shoppingimage} alt="cart"  className='imgnav'/>
-                        <span className='cartitems'>{cartitems.length}</span>
+                        <span className='cartitems'>{totalQuantity}</span>
 
                         </Link>
                     </ul>
